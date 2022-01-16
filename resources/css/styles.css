@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: none;
+}
+h2{
+    text-align: center;
+}
+.section-slider{
+    margin-top: 50px;
+}
+.header{
+    height:50px;
+    background-color: #000;
+    width:100%;
+    position: fixed;
+    top:0;
+}
+ul li{
+    list-style: none;
+}
+.header > ul > li{
+    display:inline-block;
+    line-height: 50px;
+}
+.header .nav{
+    position: relative;
+    display: inline-block;
+}
+.nav .sub-nav{
+    position: absolute;
+    background-color: #000;
+    transform: translateX(-15%);
+    display:none;
+}
+.nav li a{
+    text-decoration: none;
+    color:white;
+}
+.header ul li{
+    padding: 0 20px;
+}
+.nav > li:hover > .sub-nav {
+    display: block;
+}
+.header > .nav > li:hover,
+.sub-nav > li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.header > .nav > li:hover > a,
+.sub-nav > li:hover > a{
+    color:#000;
+}
+.header .icon-search{
+    float:right;
+    color: white;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 20px;
+}
+.header .icon-search:hover{
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+}
+.section-slider .img-chicagp,
+.img-chicago img{
+    width:100%;
+}
+.section-slider .slider-content{
+    position: absolute;
+    color: white;
+    top:0;
+    text-align: center;
+    width:100%;
+    line-height: 40px;
+    transform: translateY(700%);
+}
+.slider-content h2{
+    font-weight: 100;
+}
+.slider-content p{
+    font-weight: 600;
+}
+.section-content{
+    width:60%;
+    margin:50px auto;
+}
+.section-content figcaption{
+    text-align: center;
+
+    margin : 20px 0;
+    font-weight: 200;
+    opacity: 0.7;
+}
+.section-content .span-1-of-3{
+    width:32%;
+    display:inline-block;
+    margin-bottom: 50px;
+}
+.section-content .span-1-of-3 p{
+    text-align: center;
+    margin: 30px 0;
+}
+.section-content .span-1-of-3 img{
+    width:70%;
+    margin: 0 15%;
+    border-radius: 2px;
+}
+.section-tickets{
+    color: #fff;
+    background-color: #000;
+}
+.section-tickets > p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-tickets .time-tickets{
+    width:70%;
+    margin:0 auto;
+    background-color: #fff;
+    height:40px;
+    padding: 0 20px;
+    line-height:40px;
+    border-bottom: solid 1px #ccc;
+    color:#000;
+}
+.section-tickets .time-tickets p,
+.section-tickets .time-tickets .check{
+    display:inline-block;
+}
+.section-tickets .time-tickets .check{
+    background-color: red;
+    line-height: 20px;
+    margin-left: 20px;
+    color:#fff;
+    padding: 0 10px;
+}
+.section-tickets .time-tickets .rest-check{
+    display:inline-block;
+    
+    background-color: #000;
+    color:#fff;
+    width:30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.section-tickets .img-tickets{
+    width:80%;
+    margin: 0 auto;
+    margin-top:70px;
+}
+.section-tickets .img-tickets .span-1-of-3{
+    display:inline-block;
+    width:31%;
+}
+
+.section-tickets .img-tickets img{
+    width:100%;
+    margin-bottom:20px;
+}
+.section-tickets h2{
+    padding: 40px 0;
+
+}
+.section-tickets .img-tickets .content-tickets{
+    background-color: #fff;
+    color:#000;
+}
+.img-tickets .content-tickets p{
+    display: inline-block;
+    margin-top:30px;
+}
+.section-tickets .img-tickets .content-tickets{
+    display: inline-block;
+    width:80%;
+    margin-left: 20%;
+}
+.img-tickets .content-tickets p,
+.img-tickets .content-tickets h4{
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+.img-tickets .content-tickets a{
+    text-decoration: none;
+    background-color: #000;
+    color:#fff;
+    padding:10px;
+    display:inline-block;
+    margin-left:10%;
+    margin-bottom: 10px;
+}
+
+.section-tickets{
+    padding-bottom: 100px;
+}
+.content-tickets a:hover{
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+}
+.section-contact > i{
+    text-align: center;
+    display:block;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+.section-contact h2{
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.section-contact .contact{
+    width:80%;
+    margin: 0 auto;
+    margin-left:15%;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+.section-contact .contact .span-1-of-3{
+    width: 30%;
+    display: inline-block;
+}
+.section-contact .contact .span-2-of-3{
+    width: 40%;
+    display: inline-block;
+    margin-left: 23%;
+}
+.section-contact .contact .Name,
+.section-contact .contact .Email{
+    width:40%;
+    display:inline-block;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+.section-contact .contact .Message{
+    width:86%;
+    display: block;
+
+}
+.section-contact .contact input{
+    padding:10px;
+}
+.section-contact .contact a{
+    display: inline-block;
+    margin-left: 81.5%;
+    margin-top: 1.5%;
+    color:white;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+.section-contact .contact a:hover{
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+}
+.img-footer img{
+    background-size: cover;
+    text-align: center;
+    width:100%;
+}
+.footer ul{
+    text-align: center;
+    margin-top:70px;
+}
+.footer ul li{
+    display:inline-block;
+    font-size: 20px;
+    margin: 0 3px;
+    opacity: 0.7;
+    color:#000;
+}
+.footer p{
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+    margin-top:20px;
+    margin-bottom: 100px;
+    opacity: 0.7;
+}
